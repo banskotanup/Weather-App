@@ -18,6 +18,7 @@ body{
     color: var(--color);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 main{
@@ -238,16 +239,20 @@ dialog h2{
 }
 
 .rbc-data{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
     justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
     margin: 10%;
 }
 
 .rbg-data{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    text-align: start;
 }
 
 .right-body-header{
@@ -348,6 +353,7 @@ hr{
 }
 
 .p-temp p{
+    text-align: justify;
     color: var(--color);
 }
 
@@ -357,4 +363,17 @@ hr{
 
 .btn-content i{
     color: #6b7283;
+}
+
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: #6b7283;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 20px;
 }

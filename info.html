@@ -1,196 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./public/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/style.css" />
     <title>Weather App</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="search">
-        <form action="">
-            <input type="text" name="search" id="search" placeholder="Enter your city name">
-            <button class="btnSearch" type="button">Search</button>
-        </form>
+      <form action="">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Enter your city name"
+        />
+        <button class="btnSearch" type="button">Search</button>
+      </form>
     </header>
     <section class="body">
-        <section class="left-body">
-            <section class="top-section">
-                <section class="left-top">
-                    <section class="left-addr">
-                        <h3 class="addrh3"></h3>
-                        <p class="cor"></p>
-                    </section>
-                    <section class="temp">
-                        <h3 class="cur-temp"></h3>
-                    </section>
-                </section>
-                <section class="right-top">
-                    <img src="./public/images/sun.png" alt="">
-                </section>
+      <section class="left-body">
+        <section class="top-section">
+          <section class="left-top">
+            <section class="left-addr">
+              <h3 class="addrh3"></h3>
+              <p class="cor"></p>
             </section>
-            <section class="mid-section">
-                <div class="mid-header">
-                    <h4>TODAY'S FORECAST</h4>
-                </div>
-                <div class="tod-data">
-                    <div class="data-time">
-                        <p>6:00am</p>
-                        <img src="./public/images/crescent-moon.png" alt="" class="img6">
-                        <p class="time-temp time-temp6"></p>
-                    </div>
-                    <hr>
-                    <div class="data-time">
-                        <p>9:00am</p>
-                        <img src="./public/images/crescent-moon.png" alt="" class="img9">
-                        <p class="time-temp time-temp9"></p>
-                    </div>
-                    <hr>
-                    <div class="data-time">
-                        <p>12:00pm</p>
-                        <img src="./public/images/crescent-moon.png" alt="" class="img12">
-                        <p class="time-temp time-temp12"></p>
-                    </div>
-                    <hr>
-                    <div class="data-time">
-                        <p>3:00pm</p>
-                        <img src="./public/images/crescent-moon.png" alt="" class="img15">
-                        <p class="time-temp time-temp15"></p>
-                    </div>
-                    <hr>
-                    <div class="data-time">
-                        <p>6:00pm</p>
-                        <img src="./public/images/crescent-moon.png" alt="" class="img18">
-                        <p class="time-temp time-temp18"></p>
-                    </div>
-                    <hr>
-                    <div class="data-time">
-                        <p>9:00pm</p>
-                        <img src="./public/images/crescent-moon.png" alt="" class="img21">
-                        <p class="time-temp time-temp21">12C</p>
-                    </div>
-                </div>
+            <section class="temp">
+              <h3 class="cur-temp"></h3>
             </section>
-            <section class="but-section">
-                <div class="btn-header">
-                    <h4>AIR CONDITIONS</h4>
-                </div>
-                <div class="btn-body">
-                    <div class="btn-content">
-                        <i class="fa-solid fa-temperature-three-quarters fa-2xl"></i>
-                        <div class="content-desc">
-                            <p>Real feel</p>
-                            <h4>12C</h4>
-                        </div>
-                    </div>
-                    <div class="btn-content">
-                        <i class="fa-solid fa-wind fa-2xl"></i>
-                        <div class="content-desc">
-                            <p>Wind</p>
-                            <h4>12C</h4>
-                        </div>
-                    </div>
-                    <div class="btn-content">
-                        <i class="fa-solid fa-droplet fa-2xl"></i>
-                        <div class="content-desc">
-                            <p>Humidity</p>
-                            <h4>12C</h4>
-                        </div>
-                    </div>
-                    <div class="btn-content">
-                        <i class="fa-solid fa-cloud-sun fa-2xl"></i>
-                        <div class="content-desc">
-                            <p>UV Index</p>
-                            <h4>12C</h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          </section>
+          <section class="right-top">
+            <img src="./public/images/sun.png" alt="" class="cur-img" />
+          </section>
         </section>
-        <section class="right-body">
-            <section class="right-body-header">
-                <h3>7-DAY FORECAST</h3>
-            </section>
-            <hr>
-            
-            <section class="right-body-content">
-                <section class="rbc-data">
-                    <p>Sunday</p>
-                <div class="rbg-data">
-                    <img src="./public/images/sun.png" alt="">
-                    <p>clear</p>
-                </div>
-                <div class="p-temp">
-                    <p>24C<span>/19c</span></p>
-                </div>
-                </section>
-                
-                <section class="rbc-data">
-                    <p>Sunday</p>
-                <div class="rbg-data">
-                    <img src="./public/images/sun.png" alt="">
-                    <p>clear</p>
-                </div>
-                <div class="p-temp">
-                    <p>24C<span>/19c</span></p>
-                </div>
-                </section>
-                <section class="rbc-data">
-                    <p>Sunday</p>
-                <div class="rbg-data">
-                    <img src="./public/images/sun.png" alt="">
-                    <p>clear</p>
-                </div>
-                <div class="p-temp">
-                    <p>24C<span>/19c</span></p>
-                </div>
-                </section>
-                <section class="rbc-data">
-                    <p>Sunday</p>
-                <div class="rbg-data">
-                    <img src="./public/images/sun.png" alt="">
-                    <p>clear</p>
-                </div>
-                <div class="p-temp">
-                    <p>24C<span>/19c</span></p>
-                </div>
-                </section>
-                <section class="rbc-data">
-                    <p>Sunday</p>
-                <div class="rbg-data">
-                    <img src="./public/images/sun.png" alt="">
-                    <p>clear</p>
-                </div>
-                <div class="p-temp">
-                    <p>24C<span>/19c</span></p>
-                </div>
-                </section>
-                <section class="rbc-data">
-                    <p>Sunday</p>
-                <div class="rbg-data">
-                    <img src="./public/images/sun.png" alt="">
-                    <p>clear</p>
-                </div>
-                <div class="p-temp">
-                    <p>24C<span>/19c</span></p>
-                </div>
-                </section>
-                <section class="rbc-data">
-                    <p>Sunday</p>
-                <div class="rbg-data">
-                    <img src="./public/images/sun.png" alt="">
-                    <p>clear</p>
-                </div>
-                <div class="p-temp">
-                    <p>24C<span>/19c</span></p>
-                </div>
-                </section>
-            </section>
+        <section class="mid-section">
+          <div class="mid-header">
+            <h4>TODAY'S FORECAST</h4>
+          </div>
+          <div class="tod-data">
+            <div class="data-time">
+              <p>6:00am</p>
+              <img src="" alt="" class="img6" />
+              <p class="time-temp time-temp6"></p>
+            </div>
+            <hr />
+            <div class="data-time">
+              <p>9:00am</p>
+              <img
+                src="./public/images/crescent-moon.png"
+                alt=""
+                class="img9"
+              />
+              <p class="time-temp time-temp9"></p>
+            </div>
+            <hr />
+            <div class="data-time">
+              <p>12:00pm</p>
+              <img
+                src="./public/images/crescent-moon.png"
+                alt=""
+                class="img12"
+              />
+              <p class="time-temp time-temp12"></p>
+            </div>
+            <hr />
+            <div class="data-time">
+              <p>3:00pm</p>
+              <img
+                src="./public/images/crescent-moon.png"
+                alt=""
+                class="img15"
+              />
+              <p class="time-temp time-temp15"></p>
+            </div>
+            <hr />
+            <div class="data-time">
+              <p>6:00pm</p>
+              <img
+                src="./public/images/crescent-moon.png"
+                alt=""
+                class="img18"
+              />
+              <p class="time-temp time-temp18"></p>
+            </div>
+            <hr />
+            <div class="data-time">
+              <p>9:00pm</p>
+              <img
+                src="./public/images/crescent-moon.png"
+                alt=""
+                class="img21"
+              />
+              <p class="time-temp time-temp21">12C</p>
+            </div>
+          </div>
         </section>
+        <section class="but-section">
+          <div class="btn-header">
+            <h4>AIR CONDITIONS</h4>
+          </div>
+          <div class="btn-body">
+            <div class="btn-content">
+              <i class="fa-solid fa-temperature-three-quarters fa-2xl"></i>
+              <div class="content-desc">
+                <p>Real feel</p>
+                <h4 class="feelslike">12C</h4>
+              </div>
+            </div>
+            <div class="btn-content">
+              <i class="fa-solid fa-wind fa-2xl"></i>
+              <div class="content-desc">
+                <p>Wind</p>
+                <h4 class="windspeed">12C</h4>
+              </div>
+            </div>
+            <div class="btn-content">
+              <i class="fa-solid fa-droplet fa-2xl"></i>
+              <div class="content-desc">
+                <p>Humidity</p>
+                <h4 class="humidity">12C</h4>
+              </div>
+            </div>
+            <div class="btn-content">
+              <i class="fa-solid fa-cloud-sun fa-2xl"></i>
+              <div class="content-desc">
+                <p>UV Index</p>
+                <h4 class="uvindex">12C</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="right-body">
+        <section class="right-body-header">
+          <h3>7-DAY FORECAST</h3>
+        </section>
+        <hr />
+
+        <section class="right-body-content">
+          <section class="rbc-data">
+            <p class="day1">Sunday</p>
+            <div class="rbg-data">
+              <img src="./public/images/sun.png" alt="" class="right-img1" />
+              <p class="info1">clear</p>
+            </div>
+            <div class="p-temp">
+              <p class="temp-max-min1">24C<span>/19c</span></p>
+            </div>
+          </section>
+
+          <section class="rbc-data">
+            <p class="day2">Sunday</p>
+            <div class="rbg-data">
+              <img src="./public/images/sun.png" alt="" class="right-img2" />
+              <p class="info2">clear</p>
+            </div>
+            <div class="p-temp">
+              <p class="temp-max-min2">24C<span>/19c</span></p>
+            </div>
+          </section>
+          <section class="rbc-data">
+            <p class="day3">Sunday</p>
+            <div class="rbg-data">
+              <img src="./public/images/sun.png" alt="" class="right-img3" />
+              <p class="info3">clear</p>
+            </div>
+            <div class="p-temp">
+              <p class="temp-max-min3">24C<span>/19c</span></p>
+            </div>
+          </section>
+          <section class="rbc-data">
+            <p class="day4">Sunday</p>
+            <div class="rbg-data">
+              <img src="./public/images/sun.png" alt="" class="right-img4" />
+              <p class="info4">clear</p>
+            </div>
+            <div class="p-temp">
+              <p class="temp-max-min4">24C<span>/19c</span></p>
+            </div>
+          </section>
+          <section class="rbc-data">
+            <p class="day5">Sunday</p>
+            <div class="rbg-data">
+              <img src="./public/images/sun.png" alt="" class="right-img5" />
+              <p class="info5">clear</p>
+            </div>
+            <div class="p-temp">
+              <p class="temp-max-min5">24C<span>/19c</span></p>
+            </div>
+          </section>
+          <section class="rbc-data">
+            <p class="day6">Sunday</p>
+            <div class="rbg-data">
+              <img src="./public/images/sun.png" alt="" class="right-img6" />
+              <p class="info6">clear</p>
+            </div>
+            <div class="p-temp">
+              <p class="temp-max-min6">24C<span>/19c</span></p>
+            </div>
+          </section>
+          <section class="rbc-data">
+            <p class="day7">Sunday</p>
+            <div class="rbg-data">
+              <img src="./public/images/sun.png" alt="" class="right-img7" />
+              <p class="info7">clear</p>
+            </div>
+            <div class="p-temp">
+              <p class="temp-max-min7">24C<span>/19c</span></p>
+            </div>
+          </section>
+        </section>
+      </section>
     </section>
 
     <div class="weatherUpdate"></div>
+
+    <footer>
+        <p>Anup Banskota © <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
     <script src="./public/main.js"></script>
-</body>
+  </body>
 </html>
