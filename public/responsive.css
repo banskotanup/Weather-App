@@ -65,11 +65,12 @@
 
     .mid-section{
         width: 94vw;
-        margin-left: 15px;
+        margin-left: 12px;
         height: 45vh;
         margin-top: 0;
         padding: 0;
         grid-template-rows: 10% 90%;
+        transform: translateY(-50px);
     }
 
     .tod-data{
@@ -87,14 +88,14 @@
     .but-section{
         width: 94vw;
         height: 40vh;
-        margin-left: 15px;
-        margin-top: 25%;
+        margin-left: 12px;
+        margin-top: 15%;
     }
 
     .right-body{
         width: 94vw;
-        transform: translateX(15px);
-        margin-top: 25%;
+        transform: translateX(12px);
+        margin-top: 20%;
     }
 
     .search{
@@ -119,5 +120,9 @@
     ::-webkit-scrollbar-thumb{
         background-color: orange;
         border-radius: 10px;
+    }
+
+    footer p{
+        padding: 20px;
     }
 }
