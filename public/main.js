@@ -104,5 +104,5 @@ function openDialog() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(dialog).close();
+  document.querySelector("dialog").close();
 });
