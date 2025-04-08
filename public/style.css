@@ -194,7 +194,7 @@ dialog h2{
     background-color: #202B3C;
     margin-left: 13%;
     padding: 10px;
-    width: 50vw;
+    width: 52vw;
     height: 24vh;
     border-radius: 10px;
 }
@@ -211,7 +211,7 @@ dialog h2{
     background-color: #202B3C;
     margin-left: 13%;
     padding: 10px;
-    width: 50vw;
+    width: 52vw;
     margin-top: 20px;
     height: 25vh;
     border-radius: 10px;
@@ -305,8 +305,8 @@ dialog h2{
 
 .data-time .time-temp{
     color: var(--color);
-    font-size: 1.3em;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 hr{
