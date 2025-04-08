@@ -93,7 +93,7 @@ console.log(filterDaily);
 filterDaily.forEach((day, index) => {
   const date = new Date(day.datetimeEpoch * 1000);
   const weekday = date.toLocaleDateString('en-US', { weekday: 'short' });
-  document.querySelector(`.temp-max-min${index + 1}`).innerHTML = `${(day.tempmax).toFixed(0)}°C<span>/${(day.tempmin).toFixed(0)}°C</span>`
+  document.querySelector(`.temp-max-min${index + 1}`).innerHTML = `${(day.tempmax).toFixed(0)}<span>/${(day.tempmin).toFixed(0)}°C</span>`
   document.querySelector(`.info${index + 1}`).textContent = day.conditions;
   document.querySelector(`.right-img${index + 1}`).src = `./public/images/icons/${day.icon}.png`;
   document.querySelector(`.day${index + 1}`).textContent = weekday;
