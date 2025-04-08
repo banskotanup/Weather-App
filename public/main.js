@@ -99,3 +99,6 @@ filterDaily.forEach((day, index) => {
   document.querySelector(`.day${index + 1}`).textContent = weekday;
 });
 
+function openDialog() {
+  document.querySelector(".home-body").classList.add("blur");
+}
