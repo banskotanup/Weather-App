@@ -8,6 +8,10 @@ body{
     --color: #EAF0F7;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     position: absolute;
@@ -390,4 +394,8 @@ footer p{
     text-align: center;
     margin-top: 20px;
     color: #6b7283;
+}
+
+.hidden{
+    display: none;
 }
