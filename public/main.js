@@ -102,3 +102,7 @@ filterDaily.forEach((day, index) => {
 function openDialog() {
   document.querySelector(".home-body").classList.add("blur");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(dialog).close();
+});
