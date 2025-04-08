@@ -88,13 +88,13 @@
         width: 94vw;
         height: 40vh;
         margin-left: 15px;
-        margin-top: 30%;
+        margin-top: 25%;
     }
 
     .right-body{
         width: 94vw;
         transform: translateX(15px);
-        margin-top: 10%;
+        margin-top: 25%;
     }
 
     .search{
