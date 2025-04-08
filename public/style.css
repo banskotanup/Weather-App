@@ -10,15 +10,13 @@ body{
 
 body{
     font-family: "Roboto", sans-serif;
-    position: relative;
-    z-index: 1;
+    position: absolute;
     height: 100%;
     width: 100vw;
     background-color: #0B121E;
     color: var(--color);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 main{
@@ -134,21 +132,31 @@ dialog h2{
     margin: 10px;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+.header{
+    font-size: 1em;
+    margin-left: 7%;
+    font-weight: 600;
+    color: orange;
+    font-family: "Bungee Spice", sans-serif;
+    letter-spacing: 5px;
+}
+
 .search form{
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
 }
 
+
 #search{
     height: 40px;
-    width: 50%;
+    width: 80%;
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.1);
     color: var(--color);
@@ -366,9 +374,9 @@ hr{
 }
 
 footer{
-    height: 60px;
+    height: 80px;
     width: 100%;
-    background-color: #6b7283;
+    background-color: #202B3C;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
 }
@@ -376,4 +384,5 @@ footer{
 footer p{
     text-align: center;
     margin-top: 20px;
+    color: #6b7283;
 }

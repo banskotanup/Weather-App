@@ -1,0 +1,118 @@
+@media(max-width:669px){
+    .home-body{
+        transform: translateY(50%);
+    }
+    .home-body h1{
+        font-size: 1.8em;
+        transform: translateX(-2px);
+    }
+
+    .home-body p{
+        text-align: justify;
+    }
+
+    .form{
+        left: 20px;
+        top: 30%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    dialog h2{
+        margin-left: 10px;
+    }
+
+    .getWeatherForm{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .getWeatherForm input{
+        width: 75vw;
+        height: 40px;
+    }
+
+    .getWeatherForm button{
+        height: 40px;
+    }
+
+    #search{
+        width: 80%;
+    }
+
+    .body{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-top{
+        margin-left: 20%;
+        gap: 10px;
+    }
+
+    .left-addr p{
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+
+    .mid-section{
+        width: 94vw;
+        margin-left: 15px;
+        height: 45vh;
+        margin-top: 0;
+        padding: 0;
+        grid-template-rows: 10% 90%;
+    }
+
+    .tod-data{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    hr{
+        display: none;
+    }
+
+    .mid-header{
+        margin-top: 30px;
+    }
+
+    .but-section{
+        width: 94vw;
+        margin-left: 15px;
+        margin-top: 30%;
+    }
+
+    .right-body{
+        width: 94vw;
+        transform: translateX(15px);
+        margin-top: 10%;
+    }
+
+    .search{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header{
+        margin-left: 10px;
+        letter-spacing: 10px;
+    }
+
+    .search form{
+        width: 100%;
+    }
+
+    ::-webkit-scrollbar{
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: orange;
+        border-radius: 10px;
+    }
+}
